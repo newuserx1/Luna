@@ -4,7 +4,7 @@ services:
     name: LunaPortal
     env: docker
     region: Singapore
-    plan: free
+    plan: Pro
     envVars:
       - key: PORT
         value: 80
@@ -23,6 +23,19 @@ services:
       - key: TELEGRAM_HASH
         # value: TELEGRAM_HASH
         sync: false
-      - key: BASE_URL
-        # value: BASE_URL
+      - key: AUTHORIZED_CHATS
+        # value: AUTHORIZED_CHATS
         sync: false
+      - key: LOG_CHAT
+        # value: LOG_CHAT
+        sync: false
+      - key: DM_MODE
+        # value: DM_MODE
+        sync: false
+      - key: DELETE_LINKS
+        # value: DELETE_LINKS
+        sync: false
+      - key: SAFE_MODE
+        # value: SAFE_MODE
+        sync: false
+      
